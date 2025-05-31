@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="assets/">
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Orthopedics </title>
+
+    <meta name="keywords" content="Orthopedics ">
+    <meta name="description" content="Marengo ">
+    <meta name="author" content="Marengo Asia Hospitals">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/">
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N67CCDHG');
+    </script>
+    <!-- End Google Tag Manager →-->
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+    <!-- Web Fonts  -->
+    <link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap" rel="stylesheet" type="text/css">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/theme-elements.css">
+
+
+    <!-- Skin CSS -->
+    <link id="skinCSS" rel="stylesheet" href="css/skins/default.css">
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.0/jquery.fancybox.min.css">
+
+    <!-- Head Libs -->
+    <script src="vendor/modernizr/modernizr.min.js"></script>
+
+     <style>
+        :root {
+            --primary-color: #3E8CA8;
+            --primary-dark: #5AACCE;
+            --primary-light: #8DCDE8;
+            --text-dark: #2c3e50;
+            --text-light: #6c757d;
+        }
+
+      
+
+        .main-container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(110, 193, 228, 0.12);
+            overflow: hidden;
+            margin: 0 auto;
+            max-width: 900px;
+        }
+
+        .header-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .header-section::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -30%;
+            width: 60%;
+            height: 160%;
+            background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+            animation: float 8s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(3deg); }
+        }
+
+        .header-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .header-subtitle {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
+        }
+
+        .treatments-section {
+            padding: 2rem 1.5rem;
+        }
+
+        .treatment-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.2rem;
+            box-shadow: 0 4px 15px rgba(110, 193, 228, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(110, 193, 228, 0.1);
+            position: relative;
+            height: 140px;
+            display: flex;
+            align-items: center;
+        }
+
+        .treatment-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color) 0%, var(--primary-light) 100%);
+            border-radius: 12px 12px 0 0;
+        }
+
+        .treatment-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(110, 193, 228, 0.15);
+            border-color: var(--primary-color);
+        }
+
+        .treatment-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: white;
+            margin-right: 1rem;
+            flex-shrink: 0;
+            box-shadow: 0 3px 10px rgba(110, 193, 228, 0.25);
+        }
+
+        .treatment-content {
+            flex: 1;
+        }
+
+        .treatment-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.4rem;
+            line-height: 1.3;
+        }
+
+        .treatment-description {
+            color: var(--text-light);
+            font-size: 0.85rem;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        .treatment-arrow {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-left: 0.8rem;
+            transition: transform 0.3s ease;
+        }
+
+        .treatment-card:hover .treatment-arrow {
+            transform: translateX(5px);
+        }
+
+        .specialty-highlight {
+            background: linear-gradient(135deg, rgba(110, 193, 228, 0.05) 0%, rgba(110, 193, 228, 0.02) 100%);
+            border-left: 4px solid var(--primary-color);
+            padding: 0.8rem 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .specialty-text {
+            color: var(--text-dark);
+            font-size: 0.9rem;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.5s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-title {
+                font-size: 1.6rem;
+            }
+            
+            .treatment-card {
+                padding: 1rem;
+                height: auto;
+                min-height: 120px;
+            }
+            
+            .treatment-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 1.1rem;
+            }
+            
+            .header-section {
+                padding: 1.5rem 1rem;
+            }
+            
+            .treatments-section {
+                padding: 1.5rem 1rem;
+            }
+
+            .treatment-title {
+                font-size: 1rem;
+            }
+
+            .treatment-description {
+                font-size: 0.8rem;
+            }
+
+            /* Stack cards in single column on tablet */
+            .col-lg-4 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .treatment-card {
+                flex-direction: column;
+                text-align: center;
+                height: auto;
+                padding: 1.2rem;
+            }
+
+            .treatment-icon {
+                margin-right: 0;
+                margin-bottom: 0.8rem;
+            }
+
+            .treatment-arrow {
+                margin-left: 0;
+                margin-top: 0.5rem;
+            }
+        }
+    </style> 
+
+<style>
+       
+
+        .section-title {
+            text-align: center;
+            color: #2c3e50;
+            font-weight: 600;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #3E8CA8, #4facfe);
+            border-radius: 2px;
+        }
+
+        .carousel-container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease;
+            gap: 15px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px 20px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #f1f3f4;
+            min-width: 160px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #3E8CA8, #4facfe);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1);
+        }
+
+        .joint-pain { background: linear-gradient(135deg, #3E8CA8, #4facfe); }
+        .arthritis { background: linear-gradient(135deg, #3E8CA8, #9575ff); }
+        .fractures { background: linear-gradient(135deg, #3E8CA8, #00d4ff); }
+        .sports { background: linear-gradient(135deg, #3E8CA8, #43e97b); }
+        .spinal { background: linear-gradient(135deg, #3E8CA8, #fa709a); }
+        .osteoporosis { background: linear-gradient(135deg, #3E8CA8, #a8edea); }
+        .congenital { background: linear-gradient(135deg, #3E8CA8, #ffecd2); }
+
+        .service-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            line-height: 1.2;
+        }
+
+        .service-description {
+            color: #6c757d;
+            font-size: 0.8rem;
+            line-height: 1.4;
+        }
+
+        .carousel-navigation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            gap: 15px;
+        }
+
+        .nav-arrow {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #ddd;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .nav-arrow:hover {
+            border-color: #3E8CA8;
+            color: #3E8CA8;
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(110, 193, 228, 0.3);
+        }
+
+        .nav-arrow.disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .nav-arrow.disabled:hover {
+            border-color: #ddd;
+            color: #666;
+            transform: none;
+            box-shadow: none;
+        }
+
+        @media (max-width: 768px) {
+            .service-card {
+                min-width: 140px;
+                height: 180px;
+                padding: 20px 15px;
+            }
+
+            .service-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 1.6rem;
+                margin-bottom: 12px;
+            }
+
+            .service-title {
+                font-size: 0.9rem;
+            }
+
+            .service-description {
+                font-size: 0.75rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .service-card {
+                min-width: 120px;
+                height: 160px;
+                padding: 15px 10px;
+            }
+
+            .service-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 1.4rem;
+                margin-bottom: 10px;
+            }
+
+            .service-title {
+                font-size: 0.85rem;
+                margin-bottom: 6px;
+            }
+
+            .service-description {
+                font-size: 0.7rem;
+            }
+
+            .carousel-track {
+                gap: 10px;
+            }
+        }
+    </style>
+    
+</head>
+
+<body data-plugin-page-transition>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N67CCDHG" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="body">
+
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-6">
+                            <!-- <div class="header-widget">
+								<a href="mailto:connect@marengoasia.com" class="text-light">
+									<i class="fa-regular fa-envelope me-2"></i>connect@marengoasia.com</a>
+							</div> -->
+                            <div class="header-contact">
+                                <ul>
+                                    <li><a href="mailto:digital.query@marengoasia.com" class="text-light">
+											<i class="fa-regular fa-envelope me-2"></i>digital.query@marengoasia.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center gap-2 justify-content-lg-end">
+                                <!-- <div class="header_icon">
+									<div class="call-area me-3">
+										<img src="img/call.svg" alt="" class="img-fluid">
+									</div>
+								</div> -->
+                                <div class="header-contact">
+                                    <ul>
+                                        <li><a href="https://api.whatsapp.com/send/?phone=7840027846&text=Hi" class="text-light"><i class="fab fa-whatsapp text-4 me-2"></i>
+												7840027846</a></li>
+                                        <li><a href="tel:7840027846" class="text-light"><i
+													class="fa-solid fa-phone text-3 me-2"></i>Call Us Now :
+												7840027846</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-form">
+                                    <div id="google_translate_element" class="translator-google"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu mobileMenuBar" id="menuHeader">
+                <div class="container">
+                    <nav class="header-menu-container">
+                        <div class="navbar-brand p-0">
+                           <a href="#">
+                        <img src="img/logo-1-impact.webp" alt="no image" class="img-fluid"/>
+                                    </a>
+
+                        </div>
+                        <div class="mobile_primary" id="primary-nav">
+                            <ul class="menu-navigation" id="menu-main-navigation-1">
+
+                                <li><a href="#about" data-hash="" data-hash-offset="0" data-hash-offset-lg="70" class="anchor-menu">Why Choose Us</a></li>
+
+                                <li><a href="#expert" data-hash="" data-hash-offset="0" data-hash-offset-lg="70" class="anchor-menu">Our Expert</a></li>
+
+                                <li><a href="#testimonial" data-hash="" data-hash-offset="0" data-hash-offset-lg="70" class="anchor-menu">Testimonials</a></li>
+
+
+
+                            </ul>
+                        </div>
+                        <div class="mobile-call ms-auto me-3">
+                            <a href="tel:7840027846"><i class="fa-solid fa-phone text-5"></i></a>
+                        </div>
+                        <div class="menu-button">
+                            <span class="toggle-bar"></span>
+                            <span class="toggle-bar"></span>
+                            <span class="toggle-bar"></span>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div role="main" class="main">
+
+            <section class="bannerSection" id="bannerSection">
+
+                <img src="img/Impact-ortho-LP-banner.png" alt="Orthopedics " class="img-fluid d-xl-block d-lg-block d-md-block d-none w-100">
+                <img src="img/Impact-ortho-LP-banner.png" alt="Orthopedics " class="img-fluid d-xl-none d-lg-none d-md-none d-block w-100">
+                <div class="container banner-container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6">
+                            <h2> </h2>
+                            <h4></h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="bannerCta" class="section pb-lg-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 booking-form">
+                            <form id="leadForm" onsubmit="return validateForm()" class="contact-form form-fields-rounded" enctype="multipart/form-data" method="POST" action="submit-form.php">
+                                <!-- Hidden fields -->
+                                <input type="hidden" name="support_slug" value="orthopedics-ahmedabad"/>
+                                    <input type="hidden" name="support_subject" value="Orthopedics ">
+                                    <input type="hidden" name="support_hospital" value="Marengo CIMS Hospital (Ahmedabad)">
+                                    <input type="hidden" name="support_speciality" value="Orthopedics ">
+                                    <input type="hidden" name="campaign_name" value="D-Orthopedics" />
+                                    <input type="hidden" name="support_email" id="support_email" value="notavailable@example.com" />
+                                    <input type="hidden" name="support_message" id="support_message" value="Orthopedics">
+
+                                    <div class="row">
+                                        <div class="form-group col-lg-3 my-lg-auto">
+                                            <label class="text-3 text-black mb-1">Enter Name</label>
+                                            <input class="form-control py-2" type="text" name="support_name" id="support_name" placeholder="Full Name *" required oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')">
+                                        </div>
+                                        <div class="form-group col-lg-3 my-lg-auto">
+                                            <label class="text-3 text-black mb-1">Mobile Number</label>
+                                            <input class="form-control py-2" type="tel" name="support_contact" id="support_contact" placeholder="Phone Number *" required maxlength="10" pattern="[0-9]{10}" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)">
+                                        </div>
+                                        <div class="form-group col-lg-3 my-lg-auto">
+                                            <label class="text-3 text-black mb-1">Email</label>
+                                            <input class="form-control py-2" name="support_user_email" type="email" placeholder="Email *" required />
+                                        </div>
+                                        <div class="form-group col-lg-3 mt-lg-auto mb-lg-1">
+                                            <input type="submit" value="Book Appointment" class="btn btn-primary text-3 btn-rounded w-100" />
+                                        </div>
+                                    </div>
+                            </form>
+
+                            <!--<form action="https://www.marengo.healthcaremarktech.in/website/Operation/supportFormSubmitted" method="post" class="contact-form form-fields-rounded" enctype="multipart/form-data">-->
+                            <!-- <form id="leadForm" class="contact-form form-fields-rounded" enctype="multipart/form-data">
+								<input type="hidden" name="support_slug" value="orthopedics-ahmedabad">
+								<input type="hidden" name="support_subject" value="Orthopedics ">
+								<input type="hidden" name="support_hospital" value="Marengo CIMS Hospital (Ahmedabad)">
+								<input type="hidden" name="support_speciality" value="Orthopedics ">
+								<input type="hidden" name="campaign_name" value="D-Orthopedics" />
+								<input type="hidden" name="support_email" id="support_email"
+									value="notavailable@example.com" />
+								<input type="hidden" name="support_message" id="support_message" value="Orthopedics">
+								<div class="row">
+									<div class="form-group col-lg-3 my-lg-auto">
+										<label class="text-3 text-black mb-1">Enter Name</label>
+										<input class="form-control py-2" name="support_name" id="FirstName" type="text"
+											required />
+									</div>
+									<div class="form-group col-lg-3 my-lg-auto">
+										<label class="text-3 text-black mb-1">Mobile Number</label>
+										<input class="form-control py-2" id="phone" name="support_contact"
+											placeholder="Mobile No *" type="text" pattern="[0-9]{10}"
+											title="Should be 10 digit number"
+											oninput="this.value = this.value.replace(/[^0-9]/g, '')" minlength="10"
+											maxlength="10" required />
+									</div>
+									<div class="form-group col-lg-3 my-lg-auto">
+										<label for="formFileInput" class="text-3 text-black mb-1">Upload Report</label>
+										<input class="form-control" type="file" id="formFileInput" name="support_file"
+											accept=".pdf,.jpg,.doc,.docx,.jpeg,.png" />
+									</div>
+									<div class="form-group col-lg-3 mt-lg-auto mb-lg-1">
+										<input type="submit" value="Book Appointment" id="submitBtn"
+											class="btn btn-primary text-3 btn-rounded w-100" />
+									</div>
+								</div>
+								<div id="responseMessage" class="mt-2 text-success"></div>
+							</form> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section about-section about-bg mt-lg-5 mb-lg-5" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 ps-xl-4 ps-lg-4 mb-lg-0 mb-3">
+                            <div class="about-rightbox list-icons">
+                                <h2>Orthopedics</h2>
+                                <p style="margin-bottom:11px"><span style="font-size:11pt"><span
+											style="line-height:107%"><span sans-serif=""
+												style="font-family:Calibri,">Impact Ortho & Joint Replacement Center provides expert orthopedic care using advanced technology and modern surgical techniques. We treat a wide range of conditions affecting bones, joints, ligaments, and muscles—including fractures, arthritis, sports injuries, spinal disorders, and joint replacements. Our minimally invasive surgeries offer faster recovery, less pain, and minimal scarring.
+With a dedicated sports medicine team and personalized rehabilitation programs, we focus on helping you regain strength, mobility, and a pain-free life. From diagnosis to recovery, Impact Ortho is committed to delivering compassionate, high-quality care tailored to your needs for long-term health and wellness.
+
+                                    </span>
+                                </p>
+
+                               
+
+                               
+
+                               
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+
+                            <div class="owl-carousel owl-theme nav-bottom rounded-nav mb-0" data-plugin-options="{'responsive': {'0': {'items': 1, 'nav': false, 'dots': true}, '479': {'items': 1, 'nav': false, 'dots': true}, '768': {'items': 1, 'nav': true, 'dots': false}, '979': {'items': 1, 'nav': true, 'dots': false}, '1199': {'items': 1, 'nav': true, 'dots': false}}, 'loop': false, 'autoplay': false, 'autoHeight': false, 'margin': 15}"
+                                style="position: sticky; top: 80px;">
+                                <div>
+                                    <img src="https://www.marengo.healthcaremarktech.in/uploads/51ba570fe68fc088e0a942bdf8700cdce7eb8b1d/1739435147CIMS-Hospital-Building-Sky.jpg" class="img-fluid" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- ======================== -->
+            <div class="container">
+        <h2 class="section-title">What We Treat</h2>
+        
+        <div class="carousel-container">
+            <div class="carousel-track" id="carouselTrack">
+                <div class="service-card">
+                    <div class="service-icon joint-pain">
+                        <i class="fas fa-walking"></i>
+                    </div>
+                    <h4 class="service-title">Joint Pain</h4>
+                    <p class="service-description">Comprehensive treatment for knee, hip, and shoulder joint pain</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon arthritis">
+                        <i class="fas fa-hand-holding-medical"></i>
+                    </div>
+                    <h4 class="service-title">Arthritis</h4>
+                    <p class="service-description">Advanced arthritis management and pain relief solutions</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon fractures">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <h4 class="service-title">Fractures & Trauma</h4>
+                    <p class="service-description">Expert care for bone fractures and traumatic injuries</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon sports">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h4 class="service-title">Sports Injuries</h4>
+                    <p class="service-description">Specialized treatment for ligament tears and tendon injuries</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon spinal">
+                        <i class="fas fa-spine"></i>
+                    </div>
+                    <h4 class="service-title">Spinal Disorders</h4>
+                    <p class="service-description">Complete spine care and back pain management</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon osteoporosis">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <h4 class="service-title">Osteoporosis</h4>
+                    <p class="service-description">Bone health assessment and osteoporosis treatment</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon congenital">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h4 class="service-title">Congenital Deformities</h4>
+                    <p class="service-description">Specialized care for congenital orthopedic conditions</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon joint-pain">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h4 class="service-title">Expert Care</h4>
+                    <p class="service-description">Comprehensive orthopedic consultation and treatment</p>
+                </div>
+            </div>
+            
+            <div class="carousel-navigation">
+                <div class="nav-arrow" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="nav-arrow" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***************************** -->
+
+     <div class="container pt-4">
+        <div class="">
+            <!-- Header Section -->
+            <div class="header-section">
+                <h1 class="header-title" style="color:#fff">Our Advanced Treatments</h1>
+                <p class="header-subtitle" style="color:#fff">Precision medical care with cutting-edge technology</p>
+            </div>
+
+            <!-- Treatments Section -->
+            <div class="treatments-section">
+                <!-- First Row - 3 Cards -->
+                <div class="row mb-3">
+                    <!-- Robotic Knee Replacement -->
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                        <div class="treatment-card fade-in">
+                            <div class="treatment-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="treatment-content">
+                                <h3 class="treatment-title">Robotic Knee Replacement</h3>
+                                <p class="treatment-description">Precision surgery for less pain and faster healing.</p>
+                            </div>
+                            <div class="treatment-arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hip Replacement Surgery -->
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                        <div class="treatment-card fade-in">
+                            <div class="treatment-icon">
+                                <i class="fas fa-walking"></i>
+                            </div>
+                            <div class="treatment-content">
+                                <h3 class="treatment-title">Hip Replacement Surgery</h3>
+                                <p class="treatment-description">Restore mobility and reduce discomfort.</p>
+                            </div>
+                            <div class="treatment-arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Arthroscopic Surgery -->
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                        <div class="treatment-card fade-in">
+                            <div class="treatment-icon">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <div class="treatment-content">
+                                <h3 class="treatment-title">Arthroscopic Surgery</h3>
+                                <p class="treatment-description">Minimally invasive procedures with quick recovery.</p>
+                            </div>
+                            <div class="treatment-arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row - 2 Cards Centered -->
+                <div class="row justify-content-center">
+                    <!-- Sports Medicine -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="treatment-card fade-in">
+                            <div class="treatment-icon">
+                                <i class="fas fa-running"></i>
+                            </div>
+                            <div class="treatment-content">
+                                <h3 class="treatment-title">Sports Medicine</h3>
+                                <p class="treatment-description">Specialized care to get you back in the game.</p>
+                            </div>
+                            <div class="treatment-arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trauma Surgery -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="treatment-card fade-in">
+                            <div class="treatment-icon">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="treatment-content">
+                                <h3 class="treatment-title">Trauma Surgery</h3>
+                                <p class="treatment-description">Expert treatment for bone fractures and injuries.</p>
+                            </div>
+                            <div class="treatment-arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specialty Highlight -->
+                <div class="specialty-highlight">
+                    <p class="specialty-text">
+                        <i class="fas fa-award" style="color: #3E8CA8; margin-right: 0.5rem;"></i>
+                        Board-certified specialists with over 15 years of experience in advanced orthopedic care
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ___________________ -->
+
+            <section class="section">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-md-6">
+                            <div class="faq-card p-4">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button  " type="button" data-bs-toggle="collapse" data-bs-target="#collapse0" aria-expanded="true" aria-controls="collapse0">
+												<span>What orthopedic conditions does Impact Ortho treat?
+</span>
+											</button>
+                                        </h2>
+                                        <div id="collapse0" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p style="margin-bottom:11px"><span style="font-size:11pt"><span
+															style="tab-stops:list .5in"><span
+																style="line-height:107%"><span sans-serif=""
+																	style="font-family:Calibri,">We treat a wide range of orthopedic conditions including fractures, arthritis, joint replacements, spinal disorders, sports injuries, ligament tears, and congenital deformities affecting bones and joints.
+</span></span>
+                                                    </span>
+                                                    </span>
+                                                </p>
+
+                                                <div align="center" style="text-align:center; margin-bottom:11px">&nbsp;
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+												<span>What types of joint replacement surgeries do you perform?
+</span>
+											</button>
+                                        </h2>
+                                        <div id="collapse1" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p><span lang="EN-IN" style="font-size:11.0pt"><span
+															style="line-height:107%"><span calibri=""
+																style="">We offer knee replacement, hip replacement, and shoulder replacement surgeries, including advanced robotic-assisted procedures for precision and faster recovery.
+</span></span>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+												<span>What is minimally invasive orthopedic surgery?</span>
+											</button>
+                                        </h2>
+                                        <div id="collapse2" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p style="margin-bottom:11px"><span style="font-size:11pt"><span
+															style="tab-stops:list .5in"><span
+																style="line-height:107%"><span sans-serif=""
+																	style="font-family:Calibri,">Minimally invasive surgery uses smaller incisions and specialized instruments, resulting in less pain, minimal scarring, and quicker healing compared to traditional surgery.
+</span></span>
+                                                    </span>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+												<span>Can Impact Ortho treat sports injuries?
+</span>
+											</button>
+                                        </h2>
+                                        <div id="collapse3" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p style="margin-bottom:11px"><span style="font-size:11pt"><span
+															style="tab-stops:list .5in"><span
+																style="line-height:107%"><span sans-serif=""
+																	style="font-family:Calibri,">Yes, we have a dedicated sports medicine team that treats ligament tears, tendon injuries, fractures, and other sports-related conditions to get you back in the game safely.
+</span></span>
+                                                    </span>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+												<span>What should I expect after joint replacement surgery?
+</span>
+											</button>
+                                        </h2>
+                                        <div id="collapse4" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p><span lang="EN-IN" style="font-size:11.0pt"><span
+															style="line-height:107%"><span calibri=""
+																style="">Post-surgery, you’ll experience some pain and swelling, which is managed with medication and care. Physical therapy and rehabilitation are key to restoring strength and mobility over the following weeks to months.
+</span></span>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mt-lg-0 mt-4">
+                            <div class="faq-card p-4">
+                                <div class="accordion" id="accordionExample2">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button  " type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+												<span>What is the recovery time for orthopedic surgeries?
+</span>
+											</button>
+                                        </h2>
+                                        <div id="collapse5" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2">
+                                            <div class="accordion-body">
+                                                <p style="margin-bottom:11px"><span style="font-size:11pt"><span
+															style="tab-stops:list .5in"><span
+																style="line-height:107%"><span sans-serif=""
+																	style="font-family:Calibri,">Recovery varies by procedure. Minimally invasive surgeries often have faster recovery, sometimes within weeks, while complex surgeries may require several months of healing and rehabilitation.
+</span></span>
+                                                    </span>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+												<span>How does Impact Ortho handle fracture management?
+</span>
+											</button>
+                                        </h2>
+                                        <div id="collapse6" class="accordion-collapse collapse " data-bs-parent="#accordionExample2">
+                                            <div class="accordion-body">
+                                                <p style="margin-bottom:11px"><span style="font-size:11pt"><span
+															style="tab-stops:list .5in"><span
+																style="line-height:107%"><span sans-serif=""
+																	style="font-family:Calibri,">We provide expert fracture care with modern surgical and non-surgical methods tailored to the type and severity of the fracture, followed by personalized rehabilitation.
+</span></span>
+                                                    </span>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+												<span>Do you offer rehabilitation after orthopedic surgery?
+</span>
+											</button>
+                                        </h2>
+                                        <div id="collapse7" class="accordion-collapse collapse " data-bs-parent="#accordionExample2">
+                                            <div class="accordion-body">
+                                                <p style="margin-bottom:11px"><span style="font-size:11pt"><span
+															style="tab-stops:list .5in"><span
+																style="line-height:107%"><span sans-serif=""
+																	style="font-family:Calibri,">Yes, customized rehabilitation programs are an essential part of our care to help you regain full function and mobility.
+</span></span>
+                                                    </span>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+												<span>Is surgery the only option for joint pain?
+</span>
+											</button>
+                                        </h2>
+                                        <div id="collapse8" class="accordion-collapse collapse " data-bs-parent="#accordionExample2">
+                                            <div class="accordion-body">
+                                                <p style="margin-bottom:11px"><span style="font-size:11pt"><span
+															style="tab-stops:list .5in"><span
+																style="line-height:107%"><span sans-serif=""
+																	style="font-family:Calibri,">Not always. We evaluate your condition thoroughly and offer both surgical and non-surgical treatments depending on your needs.
+</span></span>
+                                                    </span>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+												<span>How do I know if I need joint replacement surgery?
+</span>
+											</button>
+                                        </h2>
+                                        <div id="collapse9" class="accordion-collapse collapse " data-bs-parent="#accordionExample2">
+                                            <div class="accordion-body">
+                                                <p style="margin-bottom:11px"><span style="font-size:11pt"><span
+															style="tab-stops:list .5in"><span
+																style="line-height:107%"><span sans-serif=""
+																	style="font-family:Calibri,">Your doctor will assess your pain, mobility, and imaging results to recommend surgery if conservative treatments are no longer effective in improving your quality of life.
+</span></span>
+                                                    </span>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section class="section expert-section" id="expert">
+                <div class="container">
+                    <div class="sec-title">
+                        <h2>Team of Experts</h2>
+                    </div>
+
+                    <div class="owl-carousel owl-theme nav-bottom rounded-nav mb-0" data-plugin-options="{'responsive': {'0': {'items': 1, 'nav': false, 'dots': true}, '479': {'items': 1, 'nav': false, 'dots': true}, '768': {'items': 2, 'nav': true, 'dots': false}, '979': {'items': 4, 'nav': true, 'dots': false}, '1199': {'items': 4, 'nav': true, 'dots': false}}, 'loop': false, 'autoplay': false, 'autoHeight': false, 'margin': 15}">
+                        <div class="card-expert position-relative">
+                            <div class="expert-image overflow-hidden">
+                                <img src="https://www.marengo.healthcaremarktech.in/uploads/51ba570fe68fc088e0a942bdf8700cdce7eb8b1d/1738664289Dr-Daria-Singh.png" alt="Dr Daria Singh" class="img-fluid">
+                            </div>
+                            <div class="card-expert-content p-3">
+                                <h4 class="card-title text-primary text-4 mb-1 line-height-3">Dr Daria Singh</h4>
+                                <p class="line-height-4 text-3 mb-2 text-black">Head-Department of Orthopedic Surgery & Joint Replacement Program/ Orthopaedics & Joint Replacement , Robotic Surgery</p>
+                                <a href="#bannerCta" data-hash="" data-hash-offset="0" data-hash-offset-lg="150" class="btn btn-primary mt-2 w-100">Request An
+									Appointment</a>
+                            </div>
+                        </div>
+                        <div class="card-expert position-relative">
+                            <div class="expert-image overflow-hidden">
+                                <img src="https://www.marengo.healthcaremarktech.in/uploads/51ba570fe68fc088e0a942bdf8700cdce7eb8b1d/1739520170dr-.jpg" alt="Dr Parth Parekh " class="img-fluid">
+                            </div>
+                            <div class="card-expert-content p-3">
+                                <h4 class="card-title text-primary text-4 mb-1 line-height-3">Dr Parth Parekh </h4>
+                                <p class="line-height-4 text-3 mb-2 text-black">Consultant/ Orthopaedics & Joint Replacement
+                                </p>
+                                <a href="#bannerCta" data-hash="" data-hash-offset="0" data-hash-offset-lg="150" class="btn btn-primary mt-2 w-100">Request An
+									Appointment</a>
+                            </div>
+                        </div>
+                        <div class="card-expert position-relative">
+                            <div class="expert-image overflow-hidden">
+                                <img src="https://www.marengo.healthcaremarktech.in/uploads/51ba570fe68fc088e0a942bdf8700cdce7eb8b1d/1738664379Dr-Pranav-Ashokkumar-Shah.jpg" alt="Dr Pranav Ashokkumar Shah" class="img-fluid">
+                            </div>
+                            <div class="card-expert-content p-3">
+                                <h4 class="card-title text-primary text-4 mb-1 line-height-3">Dr Pranav Ashokkumar Shah
+                                </h4>
+                                <p class="line-height-4 text-3 mb-2 text-black">Senior Consultant/ Orthopaedics & Joint Replacement
+                                </p>
+                                <a href="#bannerCta" data-hash="" data-hash-offset="0" data-hash-offset-lg="150" class="btn btn-primary mt-2 w-100">Request An
+									Appointment</a>
+                            </div>
+                        </div>
+                        <div class="card-expert position-relative">
+                            <div class="expert-image overflow-hidden">
+                                <img src="https://www.marengo.healthcaremarktech.in/uploads/51ba570fe68fc088e0a942bdf8700cdce7eb8b1d/1738664422Dr-Samip-Chaitanya-Sheth.jpg" alt="Dr Samip Chaitanya Sheth" class="img-fluid">
+                            </div>
+                            <div class="card-expert-content p-3">
+                                <h4 class="card-title text-primary text-4 mb-1 line-height-3">Dr Samip Chaitanya Sheth
+                                </h4>
+                                <p class="line-height-4 text-3 mb-2 text-black">Consultant/ Orthopaedics & Joint Replacement
+                                </p>
+                                <a href="#bannerCta" data-hash="" data-hash-offset="0" data-hash-offset-lg="150" class="btn btn-primary mt-2 w-100">Request An
+									Appointment</a>
+                            </div>
+                        </div>
+                        <div class="card-expert position-relative">
+                            <div class="expert-image overflow-hidden">
+                                <img src="https://www.marengo.healthcaremarktech.in/uploads/51ba570fe68fc088e0a942bdf8700cdce7eb8b1d/1738664452Dr-Mohnish-Gadhavi.png" alt="Dr Mohnish Gadhavi" class="img-fluid">
+                            </div>
+                            <div class="card-expert-content p-3">
+                                <h4 class="card-title text-primary text-4 mb-1 line-height-3">Dr Mohnish Gadhavi</h4>
+                                <p class="line-height-4 text-3 mb-2 text-black">Consultant/ Orthopaedics & Joint Replacement
+                                </p>
+                                <a href="#bannerCta" data-hash="" data-hash-offset="0" data-hash-offset-lg="150" class="btn btn-primary mt-2 w-100">Request An
+									Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="section testimonial-section" id="testimonial">
+                <div class="container">
+                    <div class="sec-title text-lg-start text-center mb-lg-4 mb-3 pb-lg-0 pb-2">
+                        <h2>Testimonial</h2>
+                    </div>
+
+                    <div class="owl-carousel owl-theme nav-bottom rounded-nav mb-0" data-plugin-options="{'responsive': {'0': {'items': 1, 'nav': false, 'dots': true}, '479': {'items': 1, 'nav': false, 'dots': true}, '768': {'items': 2, 'nav': true, 'dots': false}, '979': {'items': 3, 'nav': true, 'dots': false}, '1199': {'items': 3, 'nav': true, 'dots': false}}, 'loop': false, 'autoplay': false, 'autoHeight': false, 'margin': 15}">
+                        <div class="card border-0">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/ooCeP359Guo" title="Patient Experience | Orthopedic | Marengo CIMS Hospital, Ahmedabad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="card-body p-3">
+                                <h4 class="card-title mb-1 line-height-3">Patient Experience | Orthopedic | Marengo CIMS Hospital, Ahmedabad</h4>
+                                <hr>
+                                <p class="line-height-4 text-3"></p>
+                            </div>
+                        </div>
+                        <div class="card border-0">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/9JWmIJh4ni8" title="Patient Experience | Orthopedic | Marengo CIMS Hospital, Ahmedabad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="card-body p-3">
+                                <h4 class="card-title mb-1 line-height-3">Patient Experience | Orthopedic | Marengo CIMS Hospital, Ahmedabad</h4>
+                                <hr>
+                                <p class="line-height-4 text-3"></p>
+                            </div>
+                        </div>
+                        <div class="card border-0">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/K8Bp1JUncM0" title="Patient Experience | Orthopedics | Marengo CIMS Hospital, Ahmedabad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="card-body p-3">
+                                <h4 class="card-title mb-1 line-height-3">Patient Experience | Orthopedics | Marengo CIMS Hospital, Ahmedabad</h4>
+                                <hr>
+                                <p class="line-height-4 text-3"></p>
+                            </div>
+                        </div>
+                        <div class="card border-0">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/VHsxAg3RKKY" title="Patient Experience l Orthopaedic l Marengo CIMS Hospital" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="card-body p-3">
+                                <h4 class="card-title mb-1 line-height-3">Patient Experience l Orthopaedic l Marengo CIMS Hospital</h4>
+                                <hr>
+                                <p class="line-height-4 text-3"></p>
+                            </div>
+                        </div>
+                        <div class="card border-0">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/2M40L2Y9zF8" title="Patient Experience l Orthopaedic l Marengo CIMS Hospital" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="card-body p-3">
+                                <h4 class="card-title mb-1 line-height-3">Patient Experience l Orthopaedic l Marengo CIMS Hospital</h4>
+                                <hr>
+                                <p class="line-height-4 text-3"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+            <!-- <section class="section location-section" style="background-color:#001c38;">
+                <div class="container">
+                    <div class="sec-title">
+                        <h2 class="text-white">Our Locations</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 mb-4">
+                            <div class="footer-widget">
+                                <h4 class="text-white mb-2 text-4 line-height-2 font-medium font-weight-medium">Marengo CIMS Hospital, Ahmedabad</h4>
+                                <p class="mb-3 text-white text-3-4  line-height-4">Off, Science City Rd, Science City, Panchamrut Bunglows II, Sola, Ahmedabad, Gujarat 380060</p>
+                            </div>
+                            <div class="footer-logo">
+                               
+                                <img src="img/ceti2.png" alt="" class="img-fluid">
+                                <img src="img/ceti3.png" alt="" class="img-fluid">
+                                <img src="img/cert4.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 mb-4">
+                            <div class="footer-widget">
+                                <h4 class="text-white mb-2 text-4 line-height-2 font-medium font-weight-medium">Marengo Asia Hospitals, Faridabad</h4>
+                                <p class="mb-3 text-white text-3-4  line-height-4">Plot No.1, HUDA Staff Colony, Sector 16, Faridabad, Haryana 121002</p>
+                            </div>
+                            <div class="footer-logo">
+                                <img src="img/ceti1.png" alt="" class="img-fluid">
+                                <img src="img/ceti3.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 mb-4">
+                            <div class="footer-widget">
+                                <h4 class="text-white mb-2 text-4 line-height-2 font-medium font-weight-medium">Marengo Asia Hospitals, Gurugram</h4>
+                                <p class="mb-3 text-white text-3-4  line-height-4">Golf Course Ext Rd, Sushant Lok II, Sector 56, Gurugram, Ghata, Haryana 122011</p>
+                            </div>
+                            <div class="footer-logo">
+                                <img src="img/ceti1.png" alt="" class="img-fluid">
+                                <img src="img/ceti3.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 mb-lg-0 mb-3">
+                            <div class="footer-widget">
+                                <h4 class="text-white mb-2 text-4 line-height-2 font-medium font-weight-medium">KK Patel Super Speciality Hospital, Bhuj <br> (Managed by Marengo CIMS Hospitals)</h4>
+                                <p class="mb-3 text-white text-3-4  line-height-4">Bhuj, Mundra Road University, Kutch, Bhuj, Gujarat, 370001</p>
+                            </div>
+                            <div class="footer-logo">
+                                <img src="img/ceti1.png" alt="" class="img-fluid">
+                                <img src="img/ceti3.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+            </section> -->
+
+        </div>
+
+
+        <footer id="footer" class="footer-texts-more-lighten border-0">
+            <div class="footer-copyright footer-copyright-style-2 pt-1 pb-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p class="mb-0 text-white"> Copyright © <span class="current-year text-white"></span> | Marengo Asia Hospitals. | All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="sticky-bar">
+        <a href="tel:+917840027846" class="cta-footer-btn">Call Us</a>
+        <a href="#bannerCta" class="cta-footer-btn" data-hash="" data-hash-offset="100" data-hash-offset-lg="0">Book
+			Now</a>
+    </div>
+
+    <!-- <div class="sticky-whatsapp">
+		<a href="#" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp whatapp-btn"></i></a>
+	</div> -->
+
+    <div class="emergency-trigger">
+        <a href="#bannerCta" data-hash="" data-hash-offset="0" data-hash-offset-lg="180" class="emergency-btn emergenyBtn">Enquiry Now</a>
+    </div>
+
+    <!-- Vendor -->
+    <script src="vendor/plugins/js/plugins.min.js"></script>
+
+    <!-- Theme Base, Components and Settings -->
+    <script src="js/theme.js"></script>
+
+    <!-- Theme Custom -->
+    <script src="js/custom.js"></script>
+
+    <!-- Form js -->
+    <script src="js/form.js"></script>
+
+    <!-- Theme Initialization Files -->
+    <script src="js/theme.init.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.0/jquery.fancybox.min.js"></script>
+
+    <script>
+        const year = document.querySelector('.current-year');
+        year.innerHTML = new Date().getFullYear();
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                includedLanguages: 'en,ar,ru' // Specify the languages you want to include
+            }, 'google_translate_element');
+        }
+
+        $('#google_translate_element').mouseover(function() {
+            $('.VIpgJd-ZVi9od-xl07Ob-lTBxed').attr("href", "javascript:void(0)");
+        });
+    </script>
+
+
+<!-- ======================= -->
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.getElementById('carouselTrack');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const cards = document.querySelectorAll('.service-card');
+            
+            let currentIndex = 0;
+            let cardsPerView = getCardsPerView();
+            let cardWidth = cards[0].offsetWidth + 15; // card width + gap
+            
+            function getCardsPerView() {
+                const containerWidth = document.querySelector('.carousel-container').offsetWidth;
+                const cardWidth = 175; // approximate card width + gap
+                return Math.floor(containerWidth / cardWidth);
+            }
+            
+            function updateCarousel() {
+                const translateX = -currentIndex * cardWidth;
+                track.style.transform = `translateX(${translateX}px)`;
+                
+                // Update button states
+                prevBtn.classList.toggle('disabled', currentIndex === 0);
+                nextBtn.classList.toggle('disabled', currentIndex >= cards.length - cardsPerView);
+            }
+            
+            function nextSlide() {
+                if (currentIndex < cards.length - cardsPerView) {
+                    currentIndex++;
+                    updateCarousel();
+                }
+            }
+            
+            function prevSlide() {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateCarousel();
+                }
+            }
+            
+            // Event listeners
+            nextBtn.addEventListener('click', function() {
+                if (!this.classList.contains('disabled')) {
+                    nextSlide();
+                }
+            });
+            
+            prevBtn.addEventListener('click', function() {
+                if (!this.classList.contains('disabled')) {
+                    prevSlide();
+                }
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                cardsPerView = getCardsPerView();
+                cardWidth = cards[0].offsetWidth + 15;
+                
+                // Adjust currentIndex if needed
+                if (currentIndex >= cards.length - cardsPerView) {
+                    currentIndex = Math.max(0, cards.length - cardsPerView);
+                }
+                
+                updateCarousel();
+            });
+            
+            // Auto-play functionality
+            let autoPlayInterval = setInterval(() => {
+                if (currentIndex < cards.length - cardsPerView) {
+                    nextSlide();
+                } else {
+                    currentIndex = 0;
+                    updateCarousel();
+                }
+            }, 4000);
+            
+            // Pause auto-play on hover
+            const container = document.querySelector('.carousel-container');
+            container.addEventListener('mouseenter', () => {
+                clearInterval(autoPlayInterval);
+            });
+            
+            container.addEventListener('mouseleave', () => {
+                autoPlayInterval = setInterval(() => {
+                    if (currentIndex < cards.length - cardsPerView) {
+                        nextSlide();
+                    } else {
+                        currentIndex = 0;
+                        updateCarousel();
+                    }
+                }, 4000);
+            });
+            
+            // Initial setup
+            updateCarousel();
+        });
+    </script>
+
+
+   <script>
+        // Add staggered animation to cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.treatment-card');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.1}s`;
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
